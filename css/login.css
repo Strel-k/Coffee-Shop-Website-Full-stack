@@ -1,0 +1,205 @@
+a {
+    text-decoration: none !important;
+    color:inherit !important;
+}
+*{
+    margin:0;
+    margin-top:0;
+    
+}
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 5%;
+    width: auto;
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+.header-content h3 {
+    position: relative;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.header-content h3:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px; 
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+label {
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:25%;
+    font-weight:800;
+    font-size:25px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+            width:20%;   
+ margin: auto;
+    justify-content: space-around;
+    border-radius:10px;
+}
+
+img {
+    width: 100%;
+    max-height: 800px; 
+    object-fit: cover; 
+}
+
+.text-overlay {
+    font-family:'Roboto',sans-serif;
+    font-weight: 50;
+    position: absolute; 
+    top: 5%; 
+    left: 10%; /* Adjust left position as needed */
+    transform: translate(-50%, -50%); /* Center the text within the container */
+    color: white; /* Set text color */
+    font-size: 24px; /* Set text size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text */
+}   
+.image-with-text {
+    position: relative;
+}
+
+.Inner-text {
+    position: absolute; /* Position the text absolute to the container */
+    top: 50%; /* Adjust top position as needed */
+    left: 50%; /* Adjust left position as needed */
+    transform: translate(-50%, -50%); /* Center the text within the container */
+    color: white; /* Set text color */
+    font-size: 24px; /* Set text size */
+    font-weight: bold; /* Set text weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text */
+}
+
+p {
+    text-align: center;
+    font-weight:500;
+    
+}
+
+.logo-container {
+        margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width:150px;
+    height:auto;
+    align-items: center;
+}
+.section-heading {
+    margin-top:5px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between icons */
+  }
+  .coffee-logo {
+    width: 150px; /* Adjust logo size */
+    display: block;
+    margin: auto;
+    margin-top: -10px; /* Adjust top margin to position it */
+}
+  .social-links li:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+  }
+  
+  .social-links img {
+    width: 30px; /* Set a consistent width for all icons */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .product-container {
+    display: inline-block;
+    width: calc(33.33% - 10px); /* Adjust width as needed */
+    margin: 10px;
+    vertical-align: top; /* Align containers to the top */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+
+}
+.product-container:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+.product-container img {
+    justify-content: center;
+    margin-left:25%;
+    display:flex;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.product-details {
+    text-align: center;
+}
+.product-details h4 {
+    margin-bottom: 5px;
+}
+.login {
+    justify-content: center;
+    display:flex;
+}
+.input-container {
+    flex-direction: column;
+
+}
+input {
+    padding:15px;
+    border-radius:15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+button {
+    display:flex;
+    justify-content: center;
+    background-color: gray;
+    border-radius:15%;
+    margin-left:25%;
+}

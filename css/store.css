@@ -1,0 +1,293 @@
+a {
+    text-decoration: none !important;
+    color:inherit !important;
+}
+*{
+    margin:0;
+    margin-top:0;
+    
+}
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 5%;
+    width: auto;
+    font-size: 20px; 
+}
+input {
+    text-align: center;
+}
+button {
+    background-color: gray;
+    padding:10px;
+    width:20%;
+    border-radius:15px;
+}
+.header-content h3 {
+    position: relative;
+    transition: transform 0.3s ease; 
+}
+
+.header-content h3:hover {
+    transform: scale(1.05); 
+}
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px; 
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.add-btn {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    padding: 10px;
+    width: 200px; /* Adjust the width as needed */
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container {
+    max-width: 600px; 
+    margin: auto;
+    justify-content: space-around;
+    position: relative;
+}
+.product-modal {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.modal-dialog {
+    margin: 100px auto; /* Adjust the top margin to center vertically */
+}
+img {
+    width: 100%;
+    max-height: 800px; 
+    object-fit: cover; 
+}
+.add-product-form {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.add-product-form h3 {
+    text-align: center;
+}
+
+.add-product-form label {
+    text-align: center;
+    display: block;
+    margin: 0 auto 10px; /* Center the labels horizontally and add bottom margin */
+}
+
+.add-product-form input[type="text"],
+
+.add-product-form input[type="file"]  {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-product-form button[type="submit"] {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.text-overlay {
+    font-family:'Roboto',sans-serif;
+    font-weight: 50;
+    position: absolute; 
+    top: 5%; 
+    left: 10%; /* Adjust left position as needed */
+    transform: translate(-50%, -50%); /* Center the text within the container */
+    color: white; /* Set text color */
+    font-size: 24px; /* Set text size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text */
+}   
+.image-with-text {
+    position: relative;
+}
+
+.Inner-text {
+    position: absolute; /* Position the text absolute to the container */
+    top: 50%; /* Adjust top position as needed */
+    left: 50%; /* Adjust left position as needed */
+    transform: translate(-50%, -50%); /* Center the text within the container */
+    color: white; /* Set text color */
+    font-size: 24px; /* Set text size */
+    font-weight: bold; /* Set text weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text */
+}
+
+p {
+    text-align: center;
+    font-weight:100;
+    
+}
+
+.logo-container {
+        margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width:150px;
+    height:auto;
+    align-items: center;
+}
+.section-heading {
+    margin-top:5px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between icons */
+  }
+  .coffee-logo {
+    width: 150px; /* Adjust logo size */
+    display: block;
+    margin: auto;
+    margin-top: -10px; /* Adjust top margin to position it */
+}
+  .social-links li:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+  }
+  
+  .social-links img {
+    width: 30px; /* Set a consistent width for all icons */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .product-container {
+    display: inline-block;
+    width: calc(23.33% - 10px); /* Adjust width as needed */
+    margin: 10px;
+    vertical-align: top; /* Align containers to the top */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+
+}
+.product-container:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+.product-container img {
+    justify-content: center;
+    margin-left:14%;
+    display:flex;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.product-details {
+    text-align: center;
+}
+.product-details h4 {
+    margin-bottom: 5px;
+}
+.edit-btn {
+    padding:5px;
+    background-color: yellow;
+}
+.srch-btn {
+    padding:10px;
+    border-radius:15px;
+    background-color:white;
+    width:10%;
+    position: relative;
+    left:62%;
+    margin-top:5px;
+}
+.srch {
+    border-radius:15px;
+    width:20%;
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    left:40%;
+    margin-top:5px;
+    height:5%;
+}
+.quantity {
+    display:flex;
+    margin-left:25%;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.pagination a {
+    padding: 5px 10px; /* Adjust padding as needed */
+    margin: 0 5px; /* Adjust margin between buttons */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination .active {
+    background-color: #007bff; /* Active page button color */
+    color: white;
+}
