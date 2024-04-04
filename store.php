@@ -180,7 +180,6 @@
     $searchQuery = isset($_GET['search']) ? $_GET['search'] : '';
     $searchCondition = !empty($searchQuery) ? "WHERE Name LIKE '%$searchQuery%'" : '';
     
-    // Query to get total number of products
     $totalProductsQuery = "SELECT COUNT(*) AS total FROM products $searchCondition";
     $totalProductsResult = mysqli_query($database->getConnection(), $totalProductsQuery);
     $totalProductsRow = mysqli_fetch_assoc($totalProductsResult);
@@ -194,11 +193,12 @@
     $productCount = 0;
 ?>
 
-<div class="container" style="background-color:white; border-radius:25px; margin-top:10px; padding-bottom:10%;">
-    <?php
-        echo '<form action="" method="GET" style="margin-bottom: 20px;">';
-        echo '<input type="text" name="search" placeholder="Search products" class="srch">';
-        echo '<button type="submit"class="srch-btn" >Search</button>';
+<div class="container" style="background-color:white; padding-bottom:5px;">
+    <br>
+  <?php
+        echo '<form action="" method="GET" class="search-form">';
+        echo '<input type="text" name="search" placeholder="Search products" class="search-input">';
+        echo '<button type="submit"class="search-button" >Search</button>';
         echo '</form>';
     if ($result) {
         while ($row = mysqli_fetch_assoc($result)) {
@@ -362,6 +362,7 @@
         $('#successModal').modal('show');
     }
 </script>
+<?php include "script/footer.php";?>
 <?php if($isAdmin) {
          include "adminpanel.php"; 
     }

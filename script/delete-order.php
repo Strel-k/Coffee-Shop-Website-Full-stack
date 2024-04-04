@@ -1,8 +1,7 @@
 <?php
 session_start();
-require_once "database.php"; // Assuming database.php contains the Database class definition
+require_once "database.php"; 
 
-// Error reporting configuration
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -15,8 +14,8 @@ class AdminOrderController {
 
     public function deleteOrder($order_id) {
         if (!isset($_SESSION['IsAdmin']) || $_SESSION['IsAdmin'] != 1) {
-            header("Location: login.php");
-            exit;
+            header("Location: ../login.php");
+            exit();
         }
 
         if (!isset($order_id)) {

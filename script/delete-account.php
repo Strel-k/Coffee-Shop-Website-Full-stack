@@ -13,10 +13,7 @@ class AdminController {
     }
 
     public function deleteCustomer($customer_id) {
-        if (!isset($_SESSION['IsAdmin']) || $_SESSION['IsAdmin'] != 1) {
-            header("Location: login.php");
-            exit;
-        }
+       
 
         if (!empty($customer_id)) {
             $customer_id = intval($customer_id);

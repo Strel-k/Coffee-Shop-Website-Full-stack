@@ -4,10 +4,8 @@ $username = "root";
 $password = "";
 $dbname = "coffee";
 
-// Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -20,7 +18,6 @@ class UserLogin {
     }
 
     public function authenticateUser($username, $password) {
-        // Your authentication logic here
         $login_query = "SELECT * FROM customeraccounts WHERE Username=?";
         $stmt = mysqli_prepare($this->connection, $login_query);
         mysqli_stmt_bind_param($stmt, "s", $username);
@@ -35,11 +32,9 @@ class UserLogin {
                 $stored_password = $user_row['Password'];
 
                 if (password_verify($password, $stored_password)) {
-                    // Start the session and set the Accountid
                     session_start();
                     $_SESSION['Accountid'] = $user_row['CustomerID'];
 
-                    // Redirect to the desired page
                     header("Location: index.php");
                     exit();
                 } else {
@@ -52,7 +47,6 @@ class UserLogin {
     }
 }
 
-// Usage:
 $userLogin = new UserLogin($conn);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
@@ -64,7 +58,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-// Close connection
 $conn->close();
 ?>
 <html lang="en">
@@ -78,7 +71,7 @@ $conn->close();
 </head>
 <body style="background-color: black;">
     <?php include "script/header.php";?>
-    <div class="container" style="background-color: white; width:30%; padding:45px;">
+    <div class="container" style="background-color: white; width:60%; padding:45px;">
         <label style="display:flex; margin-right:5%;">Login Form</label>
 
         <div class="login">

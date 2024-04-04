@@ -9,8 +9,8 @@ class Footer {
         echo '<br> <br>';
         echo '<footer>';
         echo '<ul class="social-links">';
-        echo '<li> <a href="#"> <img src="img/Facebook.png" alt="fb link"></a></li>';
-        echo '<li> <a href="#"> <img src="img/Email.png"> </a></li>';
+        echo '<li> <a href="https://www.facebook.com/fdave.pararuan"> <img src="img/Facebook.png" alt="fb link"></a></li>';
+        echo '<li> <a href="https://www.youtube.com/channel/UChA8tlejLbJ15c1Gq4G7RHQ"> <img src="img/Email.png"> </a></li>';
         echo '<li> <a href="#"> <img src="img/Phone_icon.png"></a></li>';
         echo '</ul>';
         echo '</footer>';
@@ -18,7 +18,6 @@ class Footer {
     }
 }
 
-// Usage:
 $footer = new Footer();
 $footer->generateFooter();
 

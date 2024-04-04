@@ -1,12 +1,29 @@
 <?php
-require_once "script/Database.php"; 
-session_start();
+require_once "script/database.php"; 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "coffee";
 
+$connection = mysqli_connect($servername, $username, $password, $dbname);
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 if (!isset($_SESSION['Accountid'])) {
     header("Location: login.php");
     exit;
 }
-
+if (isset($_SESSION['Accountid'])) {
+    $customerID = $_SESSION['Accountid'];
+    $query = "SELECT IsAdmin FROM customeraccounts WHERE CustomerID = $customerID";
+    $result = mysqli_query($connection, $query);
+    if ($result && mysqli_num_rows($result) > 0) {
+        $row = mysqli_fetch_assoc($result);
+        $isAdmin = isset($row['IsAdmin']) && $row['IsAdmin'] == 1 ? true : false;
+    }
+} else {
+    $isAdmin = false;
+}
 $database = new Database("localhost", "root", "", "coffee");
 
 $connection = $database->getConnection();

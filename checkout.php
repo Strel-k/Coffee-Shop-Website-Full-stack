@@ -88,6 +88,7 @@ function updateQuantity($connection, $order_id, $new_quantity) {
 <div class="container" style="background-color: white;">
     <div class="product">
         <h2 style="text-align:center;">Checkout Items</h2>
+        <div class="table-responsive">
         <table class="table">
     <thead>
         <tr>
@@ -137,6 +138,7 @@ function updateQuantity($connection, $order_id, $new_quantity) {
     ?>
     </tbody>
 </table>
+</div>
     </div>
 </div>
 <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">

@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body style="background-color: black;">
 <?php include "script/header.php";?>
-    <div class="container" style="background-color: white; width:30%; padding:45px;">
+    <div class="container" style="background-color: white; width:60%; padding:45px;">
     <label style="display:flex; margin-right:5%;">Registration Form</label>
 
     <div class="login">

@@ -47,7 +47,7 @@ if (isset($_SESSION['Accountid'])) {
                      
                     <div class="Inner-text" > <h1 style="display:flex; text-align: center; padding:30px; font-weight:500;"> Elevate your Coffee Experience</h1><hr><br> <p> Never Forget to buy coffee again! We ship fresh coffee to your door so you can spend more time connecting with others!</p></div>
                     
-                <img src="img/Coffee-Background.jpg" style="margin-right:10px;" height="800" width="1200">
+                <img src="img/Coffee-Background.jpg" style="margin-right:10px; padding:-25px;" height="800" width="1200">
                 
              </div>
             </div>
